@@ -33,7 +33,7 @@ var swiper2 = new Swiper(".swiper2", {
     slidesPerView: 1,
     spaceBetween: 0,
     mousewheel: true,
-    // autoplay: {delay: 5000,},
+    // autoplay: {delay: 4000,},
     pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -50,8 +50,9 @@ var swiper2 = new Swiper(".swiper2", {
 });
 
 function sp1(realIndex){
-    $('header').css('color',color[idx][realIndex]);
     $('header svg').css('fill',color[idx][realIndex]);
+    $('header .cart span').css('color',color[idx][realIndex]);
+    $('header .search a').css('color',color[idx][realIndex]);
     $('header .search').css('border-bottom',`1px solid ${color[idx][realIndex]}`);
     $('.page').css('color',color[idx][realIndex]);
     $(':root').css('--swiper-navigation-color',color[idx][realIndex]);
@@ -59,8 +60,8 @@ function sp1(realIndex){
 }
 
 function fade(){
-    $('.page').fadeIn(1);
-    $('.page').fadeOut(2000);
+    $('.page').fadeIn(0);
+    $('.page').fadeOut(4000);
 }
 
 // fade in and out

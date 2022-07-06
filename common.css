@@ -236,4 +236,103 @@ main footer .legal ul li span {
 }
 .menu-up .bottom span {
   font-weight: 500;
+}
+
+.cart .back {
+  width: 100vw;
+  padding: 5%;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in, 0.3s top;
+}
+.cart .cart-main {
+  margin: 0 auto;
+  padding: 5%;
+  width: 100vw;
+  height: 100vh;
+}
+.cart .cart-main .top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+.cart .cart-main .top span:nth-of-type(1) {
+  margin-right: 10%;
+  font-weight: 500;
+}
+.cart .cart-main .top svg {
+  width: 18px;
+  height: 18px;
+}
+.cart .cart-main .list {
+  height: 50vh;
+  position: relative;
+}
+.cart .cart-main .list p {
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+}
+.cart .cart-footer div {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  padding: 10% 0;
+}
+
+.search-main {
+  padding: 30% 5% 0 5%;
+}
+.search-main .search-header ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.search-main .search-header ul li.active span {
+  font-weight: 500;
+}
+.search-main .search-header ul li {
+  margin-right: 5%;
+}
+.search-main .write input {
+  width: 100%;
+  height: 32px;
+  margin: 10% 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  color: #000;
+  font-size: 4vw;
+  font-weight: 500;
+}
+.search-main .write input::-moz-placeholder {
+  color: #000;
+  font-size: 4vw;
+  font-weight: 500;
+}
+.search-main .write input:-ms-input-placeholder {
+  color: #000;
+  font-size: 4vw;
+  font-weight: 500;
+}
+.search-main .write input::placeholder {
+  color: #000;
+  font-size: 4vw;
+  font-weight: 500;
+}
+.search-main .search-body {
+  margin-top: 10%;
+}
+.search-main .search-body h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.search-main .search-body ul li {
+  margin: 5% 0;
 }/*# sourceMappingURL=common.css.map */
