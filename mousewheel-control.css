@@ -1,0 +1,67 @@
+/* Demo styles */
+
+/* 
+    html,body {
+    position: relative;
+    height: 100%;
+    }
+
+    body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    }  */
+
+@media (max-width: 767px) {
+    
+    .swiper-container .swiper2 {
+    width: 100vw;
+    height: 100vh;
+    }
+    .swiper-container .swiper2 img {width: 100vw; height: 100vh;}
+
+    .swiper-slide {
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+        top: 80%;
+        right: 5%;
+        transform: translate3d(0px,-20%,0);
+        width: 0;
+    }
+
+    :root {
+        --swiper-theme-color: #fff;
+        --swiper-navigation-color: transparent;
+        --swiper-navigation-size: 21px;
+    }
+}
