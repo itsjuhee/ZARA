@@ -91,6 +91,8 @@ $('.write input').on('input', function(){
 function inputClear(){
         if ($('.write input').val()=='') {
             $('.write svg').css('display','none');
+            $('.search-result').removeClass('active');
+            $('.search-body').css('display','block');
         }else{
             $('.write svg').css('display','block');
         }   
@@ -101,9 +103,6 @@ function inputClear(){
 $('.write svg').on('click', function(){
     $('.write input').val('');
     inputClear();
-
-    $('.search-result').removeClass('active');
-    $('.search-body').css('display','block');
 })
 
 // call data
