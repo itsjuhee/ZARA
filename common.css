@@ -400,4 +400,78 @@ main footer .legal ul li span {
   background-color: #ffe800;
   padding: 4px;
   vertical-align: middle;
+}
+
+.filter.active {
+  display: flex;
+}
+
+.filter {
+  z-index: 999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.filter .f-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+.filter .f-main {
+  padding: 80px 40px 0 40px;
+}
+.filter .f-main .f-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter .f-main .f-size ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.filter .f-main .f-size ul li.active {
+  background-color: #000;
+  color: #fff;
+}
+.filter .f-main .f-size ul li.active label {
+  font-weight: 500;
+}
+.filter .f-main .f-size ul li {
+  width: 47%;
+  margin: 4px;
+  padding: 8px 6px;
+  border: 1px solid #000;
+  text-align: center;
+}
+.filter .f-main .f-size ul li label {
+  font-size: 14px;
+}
+.filter .f-main .f-result {
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.filter .f-main .f-result span:nth-of-type(1) {
+  padding: 12px 24px;
+  border: 1px solid #000;
+}
+.filter .f-main .f-result span:nth-of-type(1) code {
+  margin-left: 4px;
+}
+.filter .f-main .f-result span:nth-of-type(2) {
+  color: #999;
 }/*# sourceMappingURL=common.css.map */

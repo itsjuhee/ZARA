@@ -151,3 +151,32 @@ function headerScroll (){
     if(scrollState.y == 0) $('header').removeClass('search');
 }
 $(window).on('scroll', headerScroll);
+
+// filter
+
+// open
+$('.open-filter').on('click', function(){
+    $('.filter').addClass('active');
+});
+
+// close
+
+$('.f-close, .f-result span:nth-of-type(1)').on('click', function(){
+    $('.filter').removeClass('active');
+});
+
+// selected size
+let count = 0;
+
+$('.f-size ul li').on('click', function(){
+    $(this).toggleClass('active');
+    
+    if ($(this).has('active')) count ++;
+    $('.f-header code').text(count);
+});
+
+// clear
+
+$('.f-close, .f-result span:nth-of-type(2)').on('click', function(){
+    $('.f-size ul li').removeClass('active');
+});
