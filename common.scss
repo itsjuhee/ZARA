@@ -229,17 +229,18 @@ main {
     }
     .write {
         display: flex; align-items: center;
+        border-bottom: 1px solid #000;
+        margin: 8% 0 10%;
         input {
             width: 100%; height: 32px;
-            margin: 8% 0 10%;
             border: none;
-            border-bottom: 1px solid #000;
             outline: none;
             color: #000; font-size: 4vw; font-weight: 500;
         }
         input::placeholder {
             color: #000; font-size: 4vw; font-weight: 400;
         }
+        svg {display: none;}
     }
     .search-body {
         margin-top: 10%;
@@ -252,7 +253,9 @@ main {
             }
         }
     }
+    .search-result.active {display: block;}
     .search-result {
+        display: none;
         .result-top {
             display: flex;
             justify-content: space-between;
@@ -267,8 +270,6 @@ main {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                
-                display: none;
                 li {
                     width: 48%;
                     margin: 0 0 20px;

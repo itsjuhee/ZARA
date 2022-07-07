@@ -75,18 +75,34 @@ $('.search-body ul li').on('click', function(){
 // top clicked
 
 $('.search-body ul li:nth-of-type(1)').on('click', function(){
-    $('.search-result .results ul').addClass('active');
+    $('.search-result').addClass('active');
     $('.search-body').css('display','none');
-
+    
     // find input value
     $('.write input').val($(this).find('span').text());
+    inputClear();
 })
+
+// display input clear icon
+$('.write input').on('input', function(){
+    inputClear();
+})
+
+function inputClear(){
+        if ($('.write input').val()=='') {
+            $('.write svg').css('display','none');
+        }else{
+            $('.write svg').css('display','block');
+        }   
+}
 
 // remove text
 
 $('.write svg').on('click', function(){
     $('.write input').val('');
-    $('.search-result .results ul').removeClass('active');
+    inputClear();
+
+    $('.search-result').removeClass('active');
     $('.search-body').css('display','block');
 })
 
