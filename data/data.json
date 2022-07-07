@@ -1,0 +1,74 @@
+{
+    "woman_top":[
+        {
+            "code":10,
+            "img": "./ZARA/products/STRUCTURED CROP TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":11,
+            "img": "./ZARA/products/FLORAL CORSET TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":12,
+            "img": "./ZARA/products/SWEETHEART NECKLINE TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":13,
+            "img": "./ZARA/products/RUCHED CROP TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":14,
+            "img": "./ZARA/products/KNOTTED SATIN TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":15,
+            "img": "./ZARA/products/LACE TOP LIMITED EDITION.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":16,
+            "img": "./ZARA/products/SEAMLESS TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":17,
+            "img": "./ZARA/products/KNIT TOP WITH ROUND NECK.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":18,
+            "img": "./ZARA/products/RUCHED RIB CROP TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        },
+        {
+            "code":19,
+            "img": "./ZARA/products/CROP TOP.jpg",
+            "txt1": "STRUCTURED CROP TOP",
+            "txt2": "45.90 USD",
+            "txt3": "17.99 USD"
+        }
+    ]
+}

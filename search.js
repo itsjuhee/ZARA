@@ -60,8 +60,6 @@ function subMenu(k, bln){
 
 // search
 
-// let sInx = $(this).index();
-
 $('.search-header ul li').on('click', function(){
     $('.search-header ul li').removeClass('active');
     $(this).addClass('active');
@@ -73,3 +71,44 @@ $('.search-body ul li').on('click', function(){
     $('.search-body ul li').removeClass('active');
     $(this).addClass('active');
 })
+
+// top clicked
+
+$('.search-body ul li:nth-of-type(1)').on('click', function(){
+    $('.search-result .results ul').addClass('active');
+    $('.search-body').css('display','none');
+
+    // find input value
+    $('.write input').val($(this).find('span').text());
+})
+
+// remove text
+
+$('.write svg').on('click', function(){
+    $('.write input').val('');
+    $('.search-result .results ul').removeClass('active');
+    $('.search-body').css('display','block');
+})
+
+// call data
+
+$.ajax({
+    url: './data/data.json', 
+    success:function(data){        
+        let woman_top = '';
+        $.each(data.woman_top, function(k, wp){
+            woman_top += 
+            `<li>
+                <div class="pro-img">
+                    <img src="${wp.img}" alt="product">
+                </div>
+                <div class="pro-txt">
+                    <p class="txt1">${wp.txt1}</p>
+                    <p class="txt2">${wp.txt2}</p>
+                    <span class="txt3">${wp.txt3}</span>
+                </div>
+            </li>`;
+        })
+        $('.results ul').html(woman_top)
+    }
+});
