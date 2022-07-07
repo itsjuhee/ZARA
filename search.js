@@ -127,3 +127,27 @@ $.ajax({
         $('.results ul').html(woman_top)
     }
 });
+
+// scroll
+
+let scrollState = {y:0, y2:0,state:'down'}
+        
+function searchScroll(){
+    scrollState.y=$(window).scrollTop();
+
+    if(scrollState.y > scrollState.y2){
+        scrollState.state=true;
+    }else{
+        scrollState.state=false;
+    }
+    scrollState.y2 = scrollState.y;
+}
+
+function headerScroll (){
+    searchScroll();
+    
+    if(scrollState.state) $('header').addClass('search');
+    
+    if(scrollState.y == 0) $('header').removeClass('search');
+}
+$(window).on('scroll', headerScroll);
