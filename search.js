@@ -59,12 +59,17 @@ function subMenu(k, bln){
 
 
 // search
-let sInx;
+
+// let sInx = $(this).index();
 
 $('.search-header ul li').on('click', function(){
-    if($(this).has('active')){
-        $(this).removeClass('active');
-    }else{
-        $(this).addClass('active');
-    }
+    $('.search-header ul li').removeClass('active');
+    $(this).addClass('active');
+});
+
+// search option
+
+$('.search-body ul li').on('click', function(){
+    $('.search-body ul li').removeClass('active');
+    $(this).addClass('active');
 })
