@@ -197,16 +197,16 @@ $('.f-close, .f-result span:nth-of-type(1)').on('click', function(){
 let count = 0;
 
 $('.f-size ul li').on('click', function(){
-    aa('count',$(this))
+    filterCount('count',$(this))
 });
 
 // clear
 
 $('.f-close, .f-result span:nth-of-type(2)').on('click', function(){
-    aa('clear')
+    filterCount('clear')
 });
 
-function aa(pram,selector){
+function filterCount(pram,selector){
     if(pram == 'count'){
         selector.toggleClass('active');
         
