@@ -39,7 +39,7 @@ subtit.forEach(function category (v,k){
     })
 });
 
-let num=0;
+let num = 0;
 function subMenu(k, bln){
     setTimeout(function(){
         if(k == nIdx.s && bln){
@@ -125,6 +125,31 @@ $.ajax({
             </li>`;
         })
         $('.results ul').html(woman_top)
+
+        
+        //ex
+        // function aaa(p){
+        //     let dataCode,woman_top='';
+        //     switch(p){
+        //         case 'top' : dataCode = data.woman_top;
+        //         case 'dress' : dataCode = data.dress_top;
+        //     }
+
+        //     $.each(dataCode, function(k, wp){
+        //         woman_top += 
+        //         `<li>
+        //             <div class="pro-img">
+        //                 <img src="${wp.img}" alt="product">
+        //             </div>
+        //             <div class="pro-txt">
+        //                 <p class="txt1">${wp.txt1}</p>
+        //                 <p class="txt2">${wp.txt2}</p>
+        //                 <span class="txt3">${wp.txt3}</span>
+        //             </div>
+        //         </li>`;
+        //     })
+        //     $('.results ul').html(woman_top)
+        // }
     }
 });
 
@@ -155,6 +180,7 @@ $(window).on('scroll', headerScroll);
 // filter
 
 // open
+
 $('.open-filter').on('click', function(){
     $('.filter').addClass('active');
 });
@@ -165,18 +191,31 @@ $('.f-close, .f-result span:nth-of-type(1)').on('click', function(){
     $('.filter').removeClass('active');
 });
 
+
 // selected size
+
 let count = 0;
 
 $('.f-size ul li').on('click', function(){
-    $(this).toggleClass('active');
-    
-    if ($(this).has('active')) count ++;
-    $('.f-header code').text(count);
+    aa('count',$(this))
 });
 
 // clear
 
 $('.f-close, .f-result span:nth-of-type(2)').on('click', function(){
-    $('.f-size ul li').removeClass('active');
+    aa('clear')
 });
+
+function aa(pram,selector){
+    if(pram == 'count'){
+        selector.toggleClass('active');
+        
+        if (selector.hasClass('active')) ++count;
+        else --count;
+
+    }else{
+        $('.f-size ul li').removeClass('active');
+        count = 0;
+    }
+    $('.f-header code').text(count);
+}
